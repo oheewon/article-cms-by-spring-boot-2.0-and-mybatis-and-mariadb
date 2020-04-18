@@ -29,5 +29,10 @@ public class ArticleContorller {
 		
 		return "article/list";
 	}
+	
+	@RequestMapping("/article/add")
+	public String showAdd() {
+		return "article/add";
+	}
 
 }
