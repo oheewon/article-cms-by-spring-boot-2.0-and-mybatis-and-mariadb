@@ -31,6 +31,15 @@ public class ArticleContorller {
 		return "article/detail";
 	}
 	
+	@RequestMapping("/article/modify")
+	public String showModify(Model aModel, long id) {
+		Article article = articleService.getOne(id);
+		
+		aModel.addAttribute("article", article);
+		
+		return "article/modify";
+	}
+	
 	@RequestMapping("/article/list")
 	public String showList(Model aModel) {
 		List<Article> list = articleService.getList();
