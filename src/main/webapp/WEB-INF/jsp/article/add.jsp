@@ -10,6 +10,10 @@
 <title>커뮤니티 사이트 - 게시물 작성</title>
 </head>
 <style>
+	html{
+		font-family: "Noto Sans Kr", sans-serif;
+		
+	}
 	a{
 		color:inherit;
 	
