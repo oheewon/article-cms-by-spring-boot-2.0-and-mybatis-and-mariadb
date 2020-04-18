@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/resource/common.css">
 </head>
 <body>
-	<h1 class="con">***게시물 상세페이지***</h1>
+	<h1 class="con" align="center">***게시물 상세페이지***</h1>
 	
 	<section class="con">
 		번호 : ${article.id}<br>
