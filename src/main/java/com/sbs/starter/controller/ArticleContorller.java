@@ -41,9 +41,9 @@ public class ArticleContorller {
 	@RequestMapping("/article/doAdd")
 	@ResponseBody
 	public String doAdd(@RequestParam Map<String, Object> param) {
-		articleService.add(param);
+		long newId =  articleService.add(param);
 		
-		return "게시물이 추가되었습니다.";
+		return newId + "번 게시물이 추가되었습니다.";
 	}
 
 }
