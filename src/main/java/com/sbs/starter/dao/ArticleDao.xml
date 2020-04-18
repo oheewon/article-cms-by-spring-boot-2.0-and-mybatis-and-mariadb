@@ -13,9 +13,14 @@
 	<select id="getTotalCount" parameterType="map" resultType="int">
 		SELECT count(*) FROM article
 	</select>
+
+	<delete id="delete" parameterType="long" >
+		delete from article where id = #{id}
+	</delete>
 	
 	<insert id="add" parameterType="map" useGeneratedKeys="true" keyProperty="id">
 		INSERT INTO article (regDate, title, body)
 		VALUES(now() ,#{title}, #{body})
 	</insert>
+	
 </mapper>
