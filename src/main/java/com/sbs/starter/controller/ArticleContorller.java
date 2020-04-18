@@ -22,6 +22,15 @@ public class ArticleContorller {
 	@Autowired
 	ArticleService articleService;
 	
+	@RequestMapping("/article/detail")
+	public String showDetail(Model aModel, long id) {
+		Article article = articleService.getOne(id);
+		
+		aModel.addAttribute("article", article);
+		
+		return "article/detail";
+	}
+	
 	@RequestMapping("/article/list")
 	public String showList(Model aModel) {
 		List<Article> list = articleService.getList();
