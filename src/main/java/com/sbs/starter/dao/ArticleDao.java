@@ -13,4 +13,6 @@ public interface ArticleDao {
 	public List<Article> getList();
 
 	public void add(Map<String, Object> param);
+
+	public int getTotalCount();
 }
