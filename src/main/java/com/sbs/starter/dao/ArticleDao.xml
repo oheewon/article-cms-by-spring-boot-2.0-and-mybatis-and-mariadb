@@ -23,4 +23,11 @@
 		VALUES(now() ,#{title}, #{body})
 	</insert>
 	
+	<update id="modify" parameterType="map">
+		UPDATE article
+		set title = #{title},
+		body = #{body}
+		WHERE id = #{id}
+	</update>
+	
 </mapper>
