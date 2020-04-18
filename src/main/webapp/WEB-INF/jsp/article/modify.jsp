@@ -8,43 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>커뮤니티 사이트 - 게시물 수정</title>
-<style>
-	html{
-		font-family: "Noto Sans Kr", sans-serif;
-		
-	}
-	a{
-		color:inherit;
-	
-	}
-	.con{
-		width:1000px;
-		margin: 0 auto;
-	}
-	
-	.common-form > div > * {
-	float:left
-	}
-	
-	.common-form > div::after {
-		content:"";
-		display:block;
-		clear:both;
-	}
-	
-	.common-form > div > span {
-		width:50px;
-	}
-	
-	.common-form > div > div {
-		width:calc(100% - 50px);
-	}
-	
-	.common-form > div > div > input[type="text"], .common-form > div > div > textarea {
-		width:90%;	
-	}
-	
-</style>
+<link rel="stylesheet" href="/resource/common.css">
 </head>
 <body>
 	<h1 class="con" align="center">***게시물 수정***</h1>
@@ -95,5 +59,4 @@
 		<a href="./add">게시물 추가</a>
 		<a onclick="if(confirm('삭제하시겠습니까?')== false) return false;" href="./doDelete?id=${article.id}">게시물 삭제</a>
 	</div>
-</body>
-</html>
+<%@ include file="../part/foot.jspf" %>	

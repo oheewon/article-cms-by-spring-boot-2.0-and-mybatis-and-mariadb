@@ -26,10 +26,13 @@ public class ArticleContorller {
 	public String showDetail(Model aModel, long id) {
 		Article article = articleService.getOne(id);
 		
+		articleService.hitUp(id);
+		
 		aModel.addAttribute("article", article);
 		
 		return "article/detail";
 	}
+	
 	
 	@RequestMapping("/article/modify")
 	public String showModify(Model aModel, long id) {
