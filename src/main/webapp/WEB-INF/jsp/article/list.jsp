@@ -11,7 +11,7 @@
 </head>
 <body>
 	<h1>***게시물 리스트***</h1>
-	<h2>v2</h2>
+	
 	<!-- el의 장점 : request.getAttribute("article")할 필요가 없다. -->
 	<c:forEach items="${list}" var="article">
 		<section>
