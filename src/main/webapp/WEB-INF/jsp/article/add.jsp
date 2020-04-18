@@ -10,6 +10,10 @@
 <title>커뮤니티 사이트 - 게시물 작성</title>
 </head>
 <style>
+	a{
+		color:inherit;
+	
+	}
 	.con{
 		width:1000px;
 		margin: 0 auto;
@@ -39,7 +43,7 @@
 	
 </style>
 <body>
-	<h1>***게시물 작성***</h1>
+	<h1 class="con" align="center">***게시물 작성***</h1>
 	<script type="text/javascript">
 	 function submitAddForm(form){
 
